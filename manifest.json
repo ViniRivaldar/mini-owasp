@@ -8,12 +8,12 @@
     "scripting",
     "storage"
   ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Mini OWASP Tester"
-  },
-  "background": {
-    "service_worker": "background.js"
   },
   "content_scripts": [
     {
