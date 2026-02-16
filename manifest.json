@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Mini OWASP Tester",
+  "version": "0.1",
+  "description": "Extensão MVP para iniciar recon e reload",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Mini OWASP Tester"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
